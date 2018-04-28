@@ -130,9 +130,9 @@ public class ApplicationFrame extends javax.swing.JFrame implements ActionExecut
         final XYPlot plot = result.getXYPlot();
         ValueAxis axis = plot.getDomainAxis();
         axis.setAutoRange(true);
-        axis.setFixedAutoRange(60000.0);  // 60 seconds
+        axis.setFixedAutoRange(600000.0);  // 60 seconds
         axis = plot.getRangeAxis();
-        axis.setRange(0.0, 50.0);
+        axis.setRange(0.0, 5.0);
         return result;
     }
 
